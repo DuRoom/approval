@@ -1,0 +1,55 @@
+{
+    "name": "duroom/approval",
+    "description": "Make discussions and posts require moderator approval.",
+    "type": "duroom-extension",
+    "keywords": [
+        "moderation"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/DuRoom/core/issues",
+        "source": "https://github.com/DuRoom/approval",
+        "forum": "https://discuss-duroom.js.org"
+    },
+    "homepage": "https://duroom.js.org",
+    "require": {
+        "duroom/core": "^1.2",
+        "duroom/flags": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\Approval\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "duroom-extension": {
+            "title": "Approval",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-check",
+                "backgroundColor": "#ABDC88",
+                "color": "#3F8A32"
+            }
+        },
+        "duroom-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}
